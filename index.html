@@ -37,21 +37,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script>
 
         $(document).ready(function () {
             const liffId = "1657081004-AwNnv9w0";
-            console.log(liffId)
             initializeLiff(liffId);
-            console.log(liffId)
         })
 
         function initializeLiff(liffId) {
             liff.init({
                 liffId: liffId
             }).then(() => {
-                initializeApp(liffId);
+                initializeApp();
             }).catch((err) => {
                 console.log('LIFF Initialization failed ', err);
             });

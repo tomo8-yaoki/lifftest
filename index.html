@@ -41,11 +41,8 @@
     <script>
 
         $(document).ready(function () {
-            const liffId = "1657081004-AwNnv9w0";
-            initializeLiff(liffId);
-        })
-
-        function initializeLiff(liffId) {
+//             const liffId = "1657081004-AwNnv9w0";
+                        
             liff.init({
                 liffId: '1657081004-AwNnv9w0',
             }).then(() => {
@@ -53,7 +50,8 @@
             }).catch((err) => {
                 console.log('LIFF Initialization failed ', err);
             });
-        }
+        })
+
 
         function sendText(text) {
             liff.sendMessages([{

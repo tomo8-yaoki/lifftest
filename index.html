@@ -49,7 +49,7 @@
             liff.init({
                 liffId: liffId
             }).then(() => {
-                //initializeApp();
+                initializeApp(liffId);
             }).catch((err) => {
                 console.log('LIFF Initialization failed ', err);
             });
